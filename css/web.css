@@ -1,0 +1,256 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden ;
+
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700px;
+}
+
+.container{
+    width: 1171px;
+    margin: 0 auto;
+}
+
+.intro{
+    line-height: 27px;
+}
+
+header{
+    background: rgb(77,191,254);
+    background: linear-gradient(90deg, rgba(77,191,254,1) 0%, rgba(55,143,217,1) 100%);
+    padding-top: 66px;
+    padding-bottom: 72px;
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer{
+    width: 555px;
+}
+
+.title span{
+    font-size: 59px;
+    line-height: 73px;
+}
+
+.title{
+    line-height: 49px;
+    width: 562px;
+}
+
+.intro{
+    margin-top: 47px;
+    margin-bottom: 44px;
+    width: 397px;
+    font-size: 16px;
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    background: #ffd429;
+    color: #000;
+    display: block;
+    width: 222px;
+    padding: 21px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease; 
+}
+
+.btn:hover{
+    background: #fdca00;
+}
+
+.desktop{
+    margin-top: 10px;
+    padding-right: none;
+}
+
+.learn{
+    padding-top: 108px;
+    padding-bottom: 118px;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 30px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+}
+
+.skill{
+    width: 295px;
+    background: url('../img/icon1.jpg') no-repeat center top;
+    padding-top: 134px;
+}
+
+.skill-title{
+    font-size: 19px;
+}
+
+.skill-text{
+    margin-top: 15px;
+}
+
+.skill-travell{
+    width: 262px;
+    background: url('../img/icon2.jpg') no-repeat center top;
+}
+
+.skill-make{
+    background: url('../img/icon3.jpg') no-repeat center top;
+    width: 300px;
+}
+
+.form{
+    background: #ecf3f8;
+    padding: 102px 0px;
+    text-align: center;
+}
+
+.form-btn{
+    margin-top: 62px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.input{
+    width: 342px;
+    border: 1px solid #bbbbbb;
+    font-family: 'Ubuntu', sans-serif;
+    height: 47px;
+    padding-left: 24px;
+    margin-top: 15px;
+    display: block;
+}
+
+.btn-form{
+    border: 0px;
+    cursor: pointer;
+    display: inline;
+    width: 342px;
+    margin-top: 15px;
+}
+
+.footer{
+    padding: 58px 0px;
+    background: #164d7a;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.animated{
+    opacity: 0;
+}
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px){
+	.container{
+		width: 960px;
+	}
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .title{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 200px;
+    }
+    .title br{
+        display: none;
+    }
+    .intro{
+        width: 100%;
+    }
+    .intro br{
+        display: none;
+    }
+    .btn{
+        margin: 15px auto 0px ;
+    }
+    .skills{
+        width: 85%;
+        display: inline-flexbox;
+        margin: 73px auto 0px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px){
+	.container{
+		width: 720px;
+	}
+	.logo{
+        margin-left: 75px;
+    }
+    .skills{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px){
+	.container{
+		width: 540px;
+	}
+    .logo{
+        margin-left: 15px;
+    }
+    .desktop{
+        width: 100%;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px){
+	.container{
+		width: 90%;
+	}
+    .title{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
+    .offer btn{
+        width: 310px;
+    }
+    .offer{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 15px;
+    }
+}
